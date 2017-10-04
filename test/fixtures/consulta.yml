@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data_hora: 2017-10-04 13:53:08
+  efetuado: false
+  valor: 1.5
+  pagamento: false
+  pessoa_id: 
+  convenio_id: 
+  atendente_id: 
+
+two:
+  data_hora: 2017-10-04 13:53:08
+  efetuado: false
+  valor: 1.5
+  pagamento: false
+  pessoa_id: 
+  convenio_id: 
+  atendente_id: 

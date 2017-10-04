@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data hora:</strong>
+  <%= @consultum.data_hora %>
+</p>
+
+<p>
+  <strong>Efetuado:</strong>
+  <%= @consultum.efetuado %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @consultum.valor %>
+</p>
+
+<p>
+  <strong>Pagamento:</strong>
+  <%= @consultum.pagamento %>
+</p>
+
+<p>
+  <strong>Pessoa:</strong>
+  <%= @consultum.pessoa %>
+</p>
+
+<p>
+  <strong>Convenio:</strong>
+  <%= @consultum.convenio %>
+</p>
+
+<p>
+  <strong>Atendente:</strong>
+  <%= @consultum.atendente %>
+</p>
+
+<%= link_to 'Edit', edit_consultum_path(@consultum) %> |
+<%= link_to 'Back', consulta_path %>

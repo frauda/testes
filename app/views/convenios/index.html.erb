@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Convenios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @convenios.each do |convenio| %>
+      <tr>
+        <td><%= convenio.nome %></td>
+        <td><%= link_to 'Show', convenio %></td>
+        <td><%= link_to 'Edit', edit_convenio_path(convenio) %></td>
+        <td><%= link_to 'Destroy', convenio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Convenio', new_convenio_path %>

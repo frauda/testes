@@ -1,0 +1,26 @@
+<%= form_for(@atendente) do |f| %>
+  <% if @atendente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@atendente.errors.count, "error") %> prohibited this atendente from being saved:</h2>
+
+      <ul>
+      <% @atendente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo_id %><br>
+    <%= f.text_field :cargo_id %>
+    <%= collection_select(:atendente, :cargo_id, Cargo.all, :id, :description) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
